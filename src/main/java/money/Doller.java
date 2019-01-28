@@ -13,6 +13,7 @@ public class Doller {
     
     @Override
     public boolean equals(Object object) {
-        return true;
+        var doller = (Doller) object;
+        return amount == doller.amount;
     }
 }
