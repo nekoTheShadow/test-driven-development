@@ -9,5 +9,5 @@ nullとの等価性比較
 ほかのオブジェクトとの等価性比較
 ~~5CHF*2=10CHF~~
 DollerとFrancの重複
-equalsの一般化
+~~equalsの一般化~~
 timesの一般化
