@@ -13,7 +13,7 @@ public class MoneyTest {
         var product = five.times(2);
         assertThat(product).isEqualTo(new Doller(10));
         product = five.times(3);
-        assertThat(product.amount).isEqualTo(15);
+        assertThat(product).isEqualTo(new Doller(15));
     }
     
     @Test
