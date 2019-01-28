@@ -11,9 +11,7 @@ public class MoneyTest {
     public void testMultiplication() {
         var five = new Doller(5);
         var product = five.times(2);
-
-        assertThat(product.amount).isEqualTo(10);
-        
+        assertThat(product).isEqualTo(new Doller(10));
         product = five.times(3);
         assertThat(product.amount).isEqualTo(15);
     }
