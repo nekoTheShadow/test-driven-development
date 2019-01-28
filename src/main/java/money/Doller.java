@@ -11,7 +11,7 @@ public class Doller extends Money {
     
     @Override
     public boolean equals(Object object) {
-        var doller = (Doller) object;
-        return amount == doller.amount;
+        var money = (Money) object;
+        return amount == money.amount;
     }
 }
