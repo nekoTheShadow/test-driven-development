@@ -1,8 +1,6 @@
 package money;
 
-public class Franc {
-    private int amount;
-    
+public class Franc extends Money {
     public Franc(int amount) {
         this.amount = amount;
     }
@@ -13,7 +11,7 @@ public class Franc {
     
     @Override
     public boolean equals(Object object) {
-        var doller = (Franc) object;
-        return amount == doller.amount;
+        var money = (Money) object;
+        return amount == money.amount;
     }
 }
