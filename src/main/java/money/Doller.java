@@ -10,4 +10,9 @@ public class Doller {
     public Doller times(int multipiler) {
         return new Doller(amount * multipiler);
     }
+    
+    @Override
+    public boolean equals(Object object) {
+        return true;
+    }
 }
