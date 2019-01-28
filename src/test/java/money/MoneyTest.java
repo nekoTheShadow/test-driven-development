@@ -10,10 +10,8 @@ public class MoneyTest {
     @Test
     public void testMultiplication() {
         var five = new Doller(5);
-        var product = five.times(2);
-        assertThat(product).isEqualTo(new Doller(10));
-        product = five.times(3);
-        assertThat(product).isEqualTo(new Doller(15));
+        assertThat(five.times(2)).isEqualTo(new Doller(10));
+        assertThat(five.times(3)).isEqualTo(new Doller(15));
     }
     
     @Test
