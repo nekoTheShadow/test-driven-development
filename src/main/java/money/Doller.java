@@ -8,6 +8,6 @@ public class Doller {
     }
     
     public void times(int multipiler) {
-        amount = 5 * 2;
+        amount = amount * 2;
     }
 }
