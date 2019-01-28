@@ -1,7 +1,7 @@
 package money;
 
 public class Doller {
-    int amount = 10;
+    int amount = 5 * 2;
     
     public Doller(int amount) {
         
