@@ -8,10 +8,4 @@ public class Doller extends Money {
     public Doller times(int multipiler) {
         return new Doller(amount * multipiler);
     }
-    
-    @Override
-    public boolean equals(Object object) {
-        var money = (Money) object;
-        return amount == money.amount;
-    }
 }
