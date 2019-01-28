@@ -19,4 +19,11 @@ public class MoneyTest {
         assertTrue(new Doller(5).equals(new Doller(5)));
         assertFalse(new Doller(5).equals(new Doller(6)));
     }
+    
+    @Test
+    public void testFrancMultiplication() {
+        var five = new Franc(5);
+        assertThat(five.times(2)).isEqualTo(new Franc(10));
+        assertThat(five.times(3)).isEqualTo(new Franc(15));
+    }
 }
