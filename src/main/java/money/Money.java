@@ -15,6 +15,6 @@ public abstract class Money {
         return new Doller(amount);
     }    
     public static Money franc(int amount) {
-        return new Franc(amount);
+        return new Franc(amount, null);
     }    
 }
