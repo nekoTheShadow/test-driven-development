@@ -51,4 +51,10 @@ public class MoneyTest {
         var bank = new Bank();
         assertThat(bank.reduce(sum, "USD")).isEqualTo(Money.dollar(7));
     }
+    
+    @Test
+    public void testReduceMoney() {
+        var bank = new Bank();
+        assertThat(bank.reduce(Money.dollar(1), "USD")).isEqualTo(Money.dollar(1)); 
+    }
 }
