@@ -8,9 +8,9 @@ hashCode()
 nullとの等価性比較
 ほかのオブジェクトとの等価性比較
 ~~5CHF*2=10CHF~~
-DollerとFrancの重複
+~~DollerとFrancの重複~~
 ~~equalsの一般化~~
 ~~timesの一般化~~
 ~~FrancとDollerを比較する~~
 ~~通貨の概念~~
-testFrancMultiplicationを削除する?
+~~testFrancMultiplicationを削除する?~~
