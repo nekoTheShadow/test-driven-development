@@ -1,8 +1,11 @@
 package money;
 
 public class Doller extends Money {
+    private String currency;
+    
     public Doller(int amount) {
         this.amount = amount;
+        this.currency = "USD";
     }
     
     public Money times(int multipiler) {
@@ -10,6 +13,6 @@ public class Doller extends Money {
     }
     
     public String currency() {
-        return "USD";
+        return currency;
     }
 }
