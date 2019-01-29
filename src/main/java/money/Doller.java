@@ -6,6 +6,6 @@ public class Doller extends Money {
     }
     
     public Money times(int multipiler) {
-        return new Doller(amount * multipiler, "USD");
+        return new Doller(amount * multipiler, currency);
     }
 }
