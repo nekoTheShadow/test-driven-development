@@ -8,4 +8,8 @@ public class Doller extends Money {
     public Money times(int multipiler) {
         return new Doller(amount * multipiler);
     }
+    
+    public String currency() {
+        return "USD";
+    }
 }

@@ -3,6 +3,7 @@ package money;
 public abstract class Money {
     protected int amount;
     public abstract Money times(int multiplier);
+    public abstract String currency();
     public boolean equals(Object object) {
         var money = (Money) object;
         return amount == money.amount && getClass().equals(money.getClass());
