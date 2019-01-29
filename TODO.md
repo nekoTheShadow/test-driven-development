@@ -1,0 +1,16 @@
+- $5+10CHF=$10(レートが2:1の場合)
+- <s>$5*2=$10</s>
+- <s>amoutをprivateにする</s>
+- <s>Dollerの副作用をどうする?</s>
+- Moneyの丸め処理どうする?
+- <s>equals()</s>
+- hashCode()
+- nullとの等価性比較
+-  ほかのオブジェクトとの等価性比較
+- <s>5CHF*2=10CHF</s>
+- <s>DollerとFrancの重複</s>
+- <s>equalsの一般化</s>
+- <s>timesの一般化</s>
+- <s>FrancとDollerを比較する</s>
+- <s>通貨の概念</s>
+- <s>testFrancMultiplicationを削除する?</s>
