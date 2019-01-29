@@ -1,12 +1,12 @@
 package money;
 
 public class Doller extends Money {
-    public Doller(int amount) {
+    public Doller(int amount, String currency) {
         this.amount = amount;
-        this.currency = "USD";
+        this.currency = currency;
     }
     
     public Money times(int multipiler) {
-        return new Doller(amount * multipiler);
+        return Money.dollar(amount * multipiler);
     }
 }
