@@ -11,3 +11,5 @@ nullとの等価性比較
 DollerとFrancの重複
 ~~equalsの一般化~~
 timesの一般化
+~~FrancとDollerを比較する~~
+通貨の概念
