@@ -13,3 +13,4 @@ DollerとFrancの重複
 timesの一般化
 ~~FrancとDollerを比較する~~
 通貨の概念
+testFrancMultiplicationを削除する?
