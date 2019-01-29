@@ -5,7 +5,7 @@ public class Doller extends Money {
         this.amount = amount;
     }
     
-    public Doller times(int multipiler) {
+    public Money times(int multipiler) {
         return new Doller(amount * multipiler);
     }
 }
