@@ -5,4 +5,4 @@
 - <s>Moneyを変換して換算を行う。</s>
 - <s>Reduce(Bank, String)</s>
 - <s>Sum.plus</s>
-- Expression.times
+- <s>Expression.times</s>
