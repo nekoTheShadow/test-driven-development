@@ -1,6 +1,6 @@
 - $5+10CHF=$10(レートが2:1の場合)
-- $5+$5=$10
+- <s>$5+$5=$10</s>
 - $5+$5がMoneyを返す
 - <s>Bank.reduce(Money)</s>
-- Moneyを変換して換算を行う。
-- Reduce(Bank, String)
+- <s>Moneyを変換して換算を行う。</s>
+- <s>Reduce(Bank, String)</s>
