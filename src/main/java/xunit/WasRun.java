@@ -1,26 +1,15 @@
 package xunit;
 
-public class WasRun {
+public class WasRun extends TestCase {
     Integer wasRun;
     private String name;
     
     public WasRun(String name) {
+        super(name);
         this.wasRun = null;
-        this.name = name;
     }
     
-    private void testMethod() {
+    public void testMethod() {
         this.wasRun = 1;
     }
-
-    public void run() {
-        try {
-            var method = this.getClass().getDeclaredMethod(name);
-            method.setAccessible(true);
-            method.invoke(this);
-        } catch (ReflectiveOperationException e) {
-            throw new XUnitRuntimeException(e);
-        }
-    }
-
 }
