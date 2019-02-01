@@ -23,9 +23,17 @@ public class TestCaseTest extends TestCase {
         XUnitRuntimeException.assertion(() -> result.summary().equals("1 run, 1 failed"));
     }
     
+    public void testFailedResultFormatting() {
+        var result = new TestResult();
+        result.testStarted();
+        result.testFailed();
+        XUnitRuntimeException.assertion(() -> result.summary().equals("1 run, 1 failed"));
+    }
+    
     public static void main(String[] args) {
         new TestCaseTest("testTemplateMethod").run();
         new TestCaseTest("testResult").run();
-//        new TestCaseTest("testFailedResult").run();
+        // new TestCaseTest("testFailedResult").run();
+        new TestCaseTest("testFailedResultFormatting").run();
     }
 }
