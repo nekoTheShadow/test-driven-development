@@ -4,16 +4,19 @@ public class TestCaseTest extends TestCase {
     public TestCaseTest(String name) {
         super(name);
     }
+    
+    private WasRun test;
+    
+    public void setUp() {
+        this.test = new WasRun("testMethod");
+    }
 
     public void testRunning() {
-        var test = new WasRun("testMethod");
-        XUnitRuntimeException.assertion(() -> test.wasRun == null);
         test.run();
         XUnitRuntimeException.assertion(() -> test.wasRun != null);
     }
     
     public void testSetUp() {
-        var test = new WasRun("testMethod");
         test.run();
         XUnitRuntimeException.assertion(() -> test.wasSetUp != null);
     }
