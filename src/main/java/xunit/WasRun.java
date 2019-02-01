@@ -7,8 +7,12 @@ public class WasRun {
         this.wasRun = null;
     }
     
-    public void testMethod() {
+    private void testMethod() {
         this.wasRun = 1;
+    }
+
+    public void run() {
+        testMethod();
     }
 
 }
