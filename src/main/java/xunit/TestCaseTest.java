@@ -31,9 +31,9 @@ public class TestCaseTest extends TestCase {
     }
     
     public static void main(String[] args) {
-        new TestCaseTest("testTemplateMethod").run();
-        new TestCaseTest("testResult").run();
-        // new TestCaseTest("testFailedResult").run();
-        new TestCaseTest("testFailedResultFormatting").run();
+        System.out.println(new TestCaseTest("testTemplateMethod").run().summary());
+        System.out.println(new TestCaseTest("testResult").run().summary());
+        System.out.println(new TestCaseTest("testFailedResult").run().summary());
+        System.out.println(new TestCaseTest("testFailedResultFormatting").run().summary());
     }
 }
