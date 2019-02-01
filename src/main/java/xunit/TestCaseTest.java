@@ -18,7 +18,7 @@ public class TestCaseTest extends TestCase {
     
     public void testSetUp() {
         test.run();
-        XUnitRuntimeException.assertion(() -> test.wasSetUp != null);
+        XUnitRuntimeException.assertion(() -> test.log.equals("setUp "));
     }
     
     public static void main(String[] args) {
