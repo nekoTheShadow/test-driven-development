@@ -7,7 +7,12 @@ public class TestCase {
         this.name = name;
     }
     
+    public void setUp() {
+        
+    }
+    
     public void run() {
+        setUp();
         try {
             var method = this.getClass().getDeclaredMethod(name);
             method.setAccessible(true);

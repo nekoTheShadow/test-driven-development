@@ -12,9 +12,14 @@ public class TestCaseTest extends TestCase {
         XUnitRuntimeException.assertion(() -> test.wasRun != null);
     }
     
-
+    public void testSetUp() {
+        var test = new WasRun("testMethod");
+        test.run();
+        XUnitRuntimeException.assertion(() -> test.wasSetUp != null);
+    }
+    
     public static void main(String[] args) {
-        var tct = new TestCaseTest("testRunning");
-        tct.run();
+        new TestCaseTest("testRunning").run();
+        new TestCaseTest("testSetUp").run();
     }
 }
