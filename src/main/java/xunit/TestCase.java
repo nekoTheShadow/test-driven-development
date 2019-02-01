@@ -12,6 +12,7 @@ public class TestCase {
     
     public TestResult run() {
         var result = new TestResult();
+        result.testStarted();
         
         setUp();
         try {
