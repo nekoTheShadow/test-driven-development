@@ -12,8 +12,7 @@ public class TestCase {
     public void setUp() {}
     public void tearDown() {}
     
-    public TestResult run() {
-        var result = new TestResult();
+    public void run(TestResult result) {
         result.testStarted();
         
         setUp();
@@ -27,7 +26,5 @@ public class TestCase {
             throw new XUnitRuntimeException(e);
         }
         tearDown();
-        
-        return result;
     }
 }
