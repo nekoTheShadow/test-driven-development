@@ -7,9 +7,8 @@ public class TestCase {
         this.name = name;
     }
     
-    public void setUp() {
-        
-    }
+    public void setUp() {}
+    public void tearDown() {}
     
     public void run() {
         setUp();
@@ -20,5 +19,6 @@ public class TestCase {
         } catch (ReflectiveOperationException e) {
             throw new XUnitRuntimeException(e);
         }
+        tearDown();
     }
 }
