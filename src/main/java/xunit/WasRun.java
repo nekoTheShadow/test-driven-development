@@ -18,4 +18,8 @@ public class WasRun extends TestCase {
     public void testMethod() {
         this.log += "testMethod ";
     }
+    
+    public void testBrokenMethod() {
+        throw new XUnitRuntimeException();
+    }
 }
