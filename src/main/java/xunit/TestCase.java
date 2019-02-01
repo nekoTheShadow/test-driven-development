@@ -10,7 +10,9 @@ public class TestCase {
     public void setUp() {}
     public void tearDown() {}
     
-    public void run() {
+    public TestResult run() {
+        var result = new TestResult();
+        
         setUp();
         try {
             var method = this.getClass().getDeclaredMethod(name);
@@ -20,5 +22,7 @@ public class TestCase {
             throw new XUnitRuntimeException(e);
         }
         tearDown();
+        
+        return result;
     }
 }
